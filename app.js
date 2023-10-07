@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const materiRoutes = require('./routes/materiRoutes');
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -14,6 +15,6 @@ app.get('/', (req, res) => {
 
 app.use("/materi", materiRoutes)
 
-app.listen(3000, () => {
-  console.log('Service Running on port 3000!');
+app.listen(PORT, () => {
+  console.log('Service Running on port ' + PORT);
 });
