@@ -9,6 +9,6 @@ materiRoutes.post('/', createMateriController)
 
 materiRoutes.get("/:id", getMateriByIdController)
 
-materiRoutes.get("/:category", getMateriByCategoryController)
+materiRoutes.get("/kategori=:category", getMateriByCategoryController)
 
 module.exports = materiRoutes
