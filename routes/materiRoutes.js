@@ -11,4 +11,4 @@ materiRoutes.get("/:id", getMateriByIdController)
 
 materiRoutes.get("/:category", getMateriByCategoryController)
 
-module.exports = { materiRoutes }
+module.exports = materiRoutes
