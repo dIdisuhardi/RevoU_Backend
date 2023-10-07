@@ -16,7 +16,7 @@ const getMateriByIdController = async (req, res) => {
 }
 
 const getMateriByCategoryController = async (req, res) => {
-    const kursus = await getMateriByCategoryService(req.params.id)
+    const kursus = await getMateriByCategoryService(req.params.kategori)
     if (!kursus || kursus.length === 0) {
         res.status(404).json({
             message: "kategori kursus tidak ditemukan"
