@@ -13,7 +13,7 @@ datasource db {
 model kursus {
   id        Int      @id @default(autoincrement())
   judul String
-  deskripsi      String
+  deskripsi      String  @db.VarChar(10000)
   link   String
   kategori Int
 }
